@@ -1,7 +1,8 @@
-import React from "react";
-// images
-import Image from "../assets/avatar.svg";
+import React, { useEffect, useState } from "react";
+// images 
 import Image2 from "../assets/Image2.png";
+import { FaHeart } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa6";
 
 // icons
 import {
@@ -22,6 +23,33 @@ import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 
 const Banner = () => {
+  const [likeCount, setLikeCount] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
+
+  useEffect(() => {
+    const storedLikeCount = localStorage.getItem("likeCount");
+    if (storedLikeCount) {
+      setLikeCount(parseInt(storedLikeCount, 10));
+    }
+    const storedIsClicked = localStorage.getItem("isClicked");
+    if (storedIsClicked) {
+      setIsClicked(JSON.parse(storedIsClicked));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("likeCount", likeCount);
+  }, [likeCount]);
+
+  useEffect(() => {
+    localStorage.setItem("isClicked", isClicked);
+  }, [isClicked]);
+
+  const handleLike = () => {
+    setLikeCount(likeCount + 1);
+    setIsClicked(true);
+  };
+
   return (
     <section className="min-h-[85vh] flex items-center w-[100] mt-4" id="home">
       <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center ">
@@ -95,6 +123,16 @@ const Banner = () => {
               >
                 Download My CV
               </a>
+              {isClicked ? <button
+                onClick={handleLike}
+              >
+                <FaHeart />
+              </button> : <button
+                onClick={handleLike}
+              >
+                <FaRegHeart />
+              </button>}
+              <span>{likeCount} Likes</span>
             </motion.div>
             {/* socials */}
             <motion.div
