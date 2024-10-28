@@ -51,7 +51,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="min-h-[85vh] flex items-center w-[100] mt-4" id="home">
+    <section className="flex items-center w-[100] mt-4" id="home">
       <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center ">
         <div className="flex flex-col gap-y-4 lg:flex-row  lg:gap-max-12">
           {/* text */}
@@ -81,7 +81,7 @@ const Banner = () => {
                   2000,
                   "Freelancer",
                   2000,
-                  "Sports Personality",
+                  "Sports Person",
                   2000,
                 ]}
                 speed={50}

@@ -54,12 +54,12 @@ const About = () => {
                 <div>
                   <div className="text-[36px] font-teritary text-gradient mb-2">
                     {inView ? (
-                      <CountUp start={0} end={10} duration={5} />
+                      <CountUp start={0} end={24} duration={5} />
                     ) : null}
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
-                    Years of <br />
-                    Experience
+                    Months of <br />
+                    Academic
                   </div>
                 </div>
                 <div>
@@ -67,23 +67,23 @@ const About = () => {
                     {inView ? (
                       <CountUp start={0} end={10} duration={2} />
                     ) : null}
-                    K+
+                    +
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
                     Projects <br />
-                    Complete
+                    Completed
                   </div>
                 </div>
                 <div>
                   <div className="text-[36px] font-teritary text-gradient mb-2">
                     {inView ? (
-                      <CountUp start={0} end={10} duration={2} />
+                      <CountUp start={0} end={20} duration={2} />
                     ) : null}
-                    K+
+                    +
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
-                    Satisfied <br />
-                    Customers
+                    Projects in <br />
+                    Graphic Designing
                   </div>
                 </div>
               </div>
@@ -91,9 +91,9 @@ const About = () => {
                 <Link to="contact" smooth={true} duration={1000}>
                   <button className="btn btn-lg">Contact Me</button>
                 </Link>
-                <a href="#" className="text-gradient btn-link">
+                {/* <a href="#" className="text-gradient btn-link">
                   My Portfolio
-                </a>
+                </a> */}
               </div>
             </div>
           </motion.div>

@@ -32,14 +32,14 @@ const Work = () => {
                 creativity and dedication. These works represent my journey of
                 growth, experimentation, and passion for design.
               </p>
-              <Link to="https://github.com/armahah23">
+              <a href="https://github.com/armahah23?tab=repositories">
                 <button className="btn btn-sm">View all projects</button>
-              </Link>
+              </a>
             </div>
             {/* image1 */}
             <div className="group relative overflow-hidden w-[80%] border-2 border-white/50 rounded-xl">
               {/* ovrlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 group-hover:cursor-pointer w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
               <img
                 src={Img1}
@@ -68,7 +68,9 @@ const Work = () => {
             {/* image2 */}
             <div className="group relative overflow-hidden w-[80%] border-2 border-white/50 rounded-xl">
               {/* ovrlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <a href="https://github.com/armahah23/project_Gems">
+                <div className="group-hover:bg-black/70 group-hover:cursor-pointer w-full h-full absolute z-40 transition-all duration-300"></div>
+              </a>
               {/* img */}
               <img
                 src={Img2}
@@ -89,7 +91,9 @@ const Work = () => {
             {/* image3 */}
             <div className="group relative overflow-hidden w-[80%] border-2 border-white/50 rounded-xl">
               {/* ovrlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <a href="#">
+                <div className="group-hover:bg-black/70 group-hover:cursor-pointer w-full h-full absolute z-40 transition-all duration-300"></div>
+              </a>
               {/* img */}
               <img
                 src={Img3}
@@ -97,7 +101,7 @@ const Work = () => {
                 className="group-hover:scale-125 transition-all duration-500"
               />
               {/* pre title */}
-              <div className="absolute -bottom-full group-hover:bottom-24 transition-all duration-500 z-50">
+              <div className="absolute -bottom-full group-hover:bottom-24  transition-all duration-500 z-50">
                 <span className="text-gradient ml-4">React Project</span>
               </div>
               {/* title */}

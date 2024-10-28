@@ -11,7 +11,7 @@ const services = [
   {
     name: "Full Stack Development",
     description:
-      "Building seamless, scalable applications from front to back, ensuring smooth user experiences and robust functionality.",
+      "Building seamless, scalable applications from front to back, using MERN Stack and ensuring smooth user experiences and robust functionality.",
     link: "Learn more",
   },
   {
@@ -85,15 +85,18 @@ const Services = () => {
                         </p>
                       </div>
                       <div className="flex flex-col flex-1 items-end">
-                        <a
-                          href="#"
-                          className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                        <Link 
+                          to="banner" smooth={true} duration={1000}
+                          className="btn w-9 h-9 mb-[42px] flex justify-center items-center cursor-pointer"
                         >
                           <BsArrowUpRight />
-                        </a>
-                        <a href="#" className="text-gradient text-sm">
+                        </Link>
+                        <Link
+                          to="banner" smooth={true} duration={1000}
+                          className="text-gradient text-sm cursor-pointer"
+                        >
                           {link}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   );
