@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // images 
-import Image2 from "../assets/Image2.png";
+import Image2 from "../assets/me.png";
 import { FaHeart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa6";
 
@@ -117,8 +117,8 @@ const Banner = () => {
                 <button className="btn btn-lg">Contact Me</button>
               </Link>
               <a
-                href="/public/Afrih.pdf" // Make sure the path is correct
-                download="Afrih_CV.pdf" // Sets the downloaded file name
+                href="/Afrih.pdf" 
+                download="Afrih_CV.pdf" 
                 className="text-gradient btn-link"
               >
                 Download My CV
@@ -171,7 +171,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             // viewport={{ once: false, amount: 0.7 }}
-            className="hidden lg:flex flex-1 max-w-[320px] 1g: max-w-[482px]"
+            className="hidden lg:flex flex-1 max-w-[320px] 1g:max-w-[482px]"
           >
             <img
               src={Image2}

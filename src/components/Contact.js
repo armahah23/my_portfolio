@@ -27,7 +27,7 @@ const Contact = () => {
             title: "Message sent successfully",
             showConfirmButton: false,
             timer: 1500,
-          })
+          });
         },
         (error) => {
           console.log(error.text);

@@ -38,7 +38,7 @@ const About = () => {
             {/* text */}
             <div className="flex-1">
               <h2 className="h2 text-accent">About Me</h2>
-              <h3 className="h3 mb-4">I am a free lance Front End Developer</h3>
+              <h3 className="h3 mb-4">I am a Full Stack Developer</h3>
               <p className="mb-4">
                 I'm a dedicated full stack developer with a passion for crafting
                 seamless digital experiences. With a love for problem-solving
