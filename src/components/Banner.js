@@ -23,7 +23,7 @@ import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 
 const Banner = () => {
-  const [likeCount, setLikeCount] = useState(0);
+  const [likeCount, setLikeCount] = useState(155);
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
