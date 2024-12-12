@@ -33,7 +33,7 @@ const Skills = () => {
               <h3 className="text-xl font-semibold mb-2 text-gray-800">{skill.name}</h3>
               <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
                 <div
-                  className="bg-gradient-to-r from-[#42A6E3] to-[#FF56F6] h-4 rounded-full"
+                  className="bg-gradient-to-r from-[#45641c] to-[#5667ff] h-4 rounded-full"
                   style={{ width: `${skill.proficiency}%` }}
                 ></div>
               </div>
