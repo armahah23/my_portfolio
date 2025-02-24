@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 // (mg
-import Img1 from "../assets/portfolio-img1.png";
+import Img1 from "../assets/mnds.jpeg";
 import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img3 from "../assets/ecoomerce site.png";
 import { Link } from "react-scroll";
 
 const Work = () => {
@@ -19,7 +19,7 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex-1 flex flex-col gap-y-12 mb-6 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-6 mb-6 lg:mb-0"
           >
             {/* text */}
             <div>
@@ -37,23 +37,25 @@ const Work = () => {
               </a>
             </div>
             {/* image1 */}
-            <div className="group relative overflow-hidden w-[80%] border-2 border-white/50 rounded-xl">
+            <div className="group relative overflow-hidden w-[45%] border-2 border-white/50 rounded-xl">
               {/* ovrlay */}
-              <div className="group-hover:bg-black/70 group-hover:cursor-pointer w-full h-full absolute z-40 transition-all duration-300"></div>
+              <a href="https://github.com/armahah23/mnds">
+                <div className="group-hover:bg-black/70 group-hover:cursor-pointer w-full h-full absolute z-40 transition-all duration-300"></div>
+              </a>
               {/* img */}
               <img
                 src={Img1}
                 alt=""
-                className="group-hover:scale-125 transition-all duration-500"
+                className="group-hover:scale-125 transition-all duration-500 "
               />
               {/* pre title */}
               <div className="absolute -bottom-full group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient ml-4">UI/Ux Design</span>
+                <span className="text-gradient ml-4">React Project</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full group-hover:bottom-12 transition-all duration-700 z-50">
                 <span className="text-3xl text-white ml-4">
-                  Jawahira Hardware
+                  MndS Web Application
                 </span>
               </div>
             </div>
@@ -91,7 +93,7 @@ const Work = () => {
             {/* image3 */}
             <div className="group relative overflow-hidden w-[80%] border-2 border-white/50 rounded-xl">
               {/* ovrlay */}
-              <a href="#">
+              <a href="https://github.com/armahah23/ecommercesite">
                 <div className="group-hover:bg-black/70 group-hover:cursor-pointer w-full h-full absolute z-40 transition-all duration-300"></div>
               </a>
               {/* img */}
@@ -102,12 +104,12 @@ const Work = () => {
               />
               {/* pre title */}
               <div className="absolute -bottom-full group-hover:bottom-24  transition-all duration-500 z-50">
-                <span className="text-gradient ml-4">React Project</span>
+                <span className="text-gradient ml-4">MERN Stack</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full group-hover:bottom-12 transition-all duration-700 z-50">
                 <span className="text-3xl text-white ml-4">
-                  Movie and series
+                  E-Commerce Application
                 </span>
               </div>
             </div>

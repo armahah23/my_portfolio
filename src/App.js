@@ -8,7 +8,7 @@ import Services from './components/Services';
 import Work from './components/Work';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
-import Sports from './components/Sports';
+// import Sports from './components/Sports';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
       <Services />
       <Work />
       <Skills />
-      <Sports />
+      {/* <Sports /> */}
       <Contact />
       {/* <div className='h-[4000px]'></div> */}
     </div>

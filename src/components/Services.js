@@ -55,7 +55,7 @@ const Services = () => {
                 solutions. Each project reflects my skills in creating impactful
                 applications.
               </h3>
-              <Link to="works" smooth={true} duration={500}>
+              <Link to="./Work.js" smooth={true} duration={500}>
                 <button className="btn btn-sm">See My works</button>
               </Link>
             </motion.div>
